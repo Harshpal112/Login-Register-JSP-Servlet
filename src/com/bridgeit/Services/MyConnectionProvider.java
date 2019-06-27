@@ -17,7 +17,7 @@ public class MyConnectionProvider  {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/LoginRegister", "root", "admin");
+			con = DriverManager.getConnection("jdbc:mysql://mysql:3306/mydb", "myuser", "mypassword");
 		} catch (Exception e) {
 			System.out.println(e);
 		}
